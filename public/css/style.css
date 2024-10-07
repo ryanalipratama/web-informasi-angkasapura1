@@ -1,0 +1,1337 @@
+/* ---------- Default ----------*/
+*, html , body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: #004080;
+    --secondary-color: #66CC00;
+    --background-color: #ffffff;
+    --secondary-background-color: #F2F2F2;
+    --text-color: #333333;
+}
+/* ---------- End of Default ----------*/
+
+
+
+
+
+/* ---------- Zoom Efect ---------- */
+.zoom-effect {
+    overflow: hidden;
+}
+
+.zoom-effect img {
+    transition: transform 0.3s ease; /* Durasi dan kehalusan animasi */
+}
+
+.zoom-effect:hover img {
+    transform: scale(1.1); /* Membesarkan gambar hingga 110% */
+}
+
+.card {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+/* ---------- End of Zoom Efect ----------*/
+
+
+
+
+
+/* ---------- Navbar ---------- */
+.navbar{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 8px 16px var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: var(--background-color);
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: #66cc00; /* Warna hijau */
+    border-radius: 9px;
+    transition: width .7s ease, background-color 0.3s ease;
+    font-weight: bolder;
+}
+
+.navbar .navbar-nav .nav-link:hover::after, .navbar-nav .nav-link.active::after {
+    width: 100%;
+    left: 0;
+    background: #66cc00; /* Warna hijau */
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #66cc00; /* Warna hijau */
+}
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+    border-color: var(--secondary-color);
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28102, 204, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* ---------- End of Navbar ----------*/
+
+
+
+
+
+
+/* ---------- Carousel ---------- */
+.carousel-item {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20px; 
+}
+
+.shadow-custom {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 20px;
+}
+/* ---------- End of Carousel ----------*/
+
+
+
+
+
+/* ---------- Fixed Size Img ----------*/
+.fixed-size-img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 0 0 150px 150px; 
+}
+/* ---------- End of Fixed Size Img ----------*/
+
+
+
+
+
+/* ---------- Welcome ----------*/
+.welcome .container h1{
+    font-size: 45px;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+.welcome .container p{
+    color: var(--text-color);
+    font-size: 13px;
+    text-align: justify;
+}
+
+.image-welcome-container{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.image-welcome-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* ---------- End of Welcome ----------*/
+
+
+
+
+
+/* ---------- Taking Care ---------- */
+.taking-care {
+    background-color: var(--primary-color);
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.container-taking-care {
+    width: 50%;
+}
+
+.taking-care h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.text-justify {
+    text-align: start;
+}
+
+.taking-care h5 {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.taking-care p {
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.circle img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 100%;
+}
+/* ---------- End of Taking Care ----------*/
+
+
+
+
+
+/* ---------- AirPort Technology ---------- */
+.airport-technology {
+    background-color: var(--primary-color);
+    margin-top: -50px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.airport-technology .container{
+    padding-bottom: 100px;
+}
+
+.airport-technology h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.airport-technology p {
+    color: white;
+    font-size: 12px;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.airport-technology a {
+    font-size: 13px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.airport-technology a:hover {
+    color: white;
+}
+
+.airport-technology img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+/* ---------- End of Air Port Technology ----------*/
+
+
+
+
+
+
+/* ---------- Our Skill ---------- */
+.ourskill {
+    padding-top: 80px;
+    background-color: white;
+    border-radius: 120px 120px 0 0; 
+    z-index: 3; 
+    position: relative;
+    margin-top: -70px;
+   
+}
+
+.ourskill h1 {
+    color: var(--primary-color);
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.ourskill h3 {
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.ourskill .skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.ourskill .skill .outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    position: relative;
+}
+
+.ourskill .skill .inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    background-color: white; 
+}
+
+#number {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.ourskill svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; 
+}
+
+.ourskill svg circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472; 
+    stroke-dashoffset: 472;
+    transition: stroke-dashoffset 2s linear; 
+}
+/* ---------- End of Our Skill ----------*/
+
+
+
+
+
+
+/* ---------- Vision Mision Target ----------*/
+.our h1{
+    color: var(--primary-color);
+    font-size: 35px;
+}
+   
+.our p{
+    color: var(--background-color);
+    font-size: 12px;
+    text-align: justify;
+}
+   
+.our h3{
+    margin-top: 20px;
+    color: var(--background-color);
+    font-size: 35px;
+    font-weight: bolder;
+}
+   
+.our .card{
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    height: 22rem;
+}
+   
+.custom-card {
+    width: 23rem;
+    position: relative;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+   
+.icon-wrapper {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+   
+.icon-img {
+    justify-content: center;
+    width: 150px;
+    height: 120px;
+    border-radius: 20%;
+    background-color: white;
+    padding: 10px;
+}
+/* ---------- End of Vision Mision Target ----------*/
+
+
+
+
+
+/* ---------- Gambar Judul Halaman ----------*/
+.gambar-judul {
+    height: 300px; 
+    overflow: hidden;
+    margin-top: 50px;
+    border-bottom-right-radius: 200px;
+    border: 3px solid var(--primary-color);
+}
+
+.gambar-judul img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 200px;
+}
+
+.gambar-judul h1 {
+    font-size: 48px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+/* ---------- End of Gambar Judul Halaman ----------*/
+
+
+
+
+
+/* ---------- Halaman Home ----------*/
+.breadcrumb {
+    background-color: transparent; 
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " / "; 
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: var(--primary-color); 
+    font-weight: bold;
+}
+
+.breadcrumb-item.active {
+    color: black; 
+}
+/* ---------- End of Halaman Home ----------*/
+
+
+
+
+/* ---------- Gambar Airport Technology ----------*/
+.gambar-airport-technology .gambar {
+    position: relative;
+    height: 270px;
+    width: 100%;
+    border: 4px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.gambar-airport-technology img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.gambar-airport-technology .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.gambar-airport-technology .gambar:hover .overlay {
+    opacity: 1;
+}
+
+.gambar-airport-technology .teks {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.gambar-airport-technology .teks h2{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.gambar-airport-technology .teks p{
+    font-size: 15px;
+}
+
+.view-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+/* ---------- End ofGambar Airport Technology ----------*/
+
+
+
+
+
+/* ---------- About Us ----------*/
+.deskripsi-aboutus .container-deskripsi-aboutus{
+    height: 400px;
+    
+}
+
+.deskripsi-aboutus .container-deskripsi-aboutus img{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.deskripsi-aboutus p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+
+.aboutus h1{
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 15px
+}
+
+.aboutus .row{
+    margin-top: 80px;
+}
+
+.aboutus .struktur-box{
+    width: auto;
+    height: auto;
+}
+
+.aboutus img{
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+/* ---------- End of About Us ----------*/
+
+
+
+
+
+/* ---------- Our Service ----------*/
+.ourservice p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+.carousel-slider{
+    padding-bottom: 50px;
+}
+
+.swiper {
+    width: auto;
+    height: auto;
+}
+
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-container .card-carousel{
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    height: 310px;
+    width: 250px;
+}
+
+.card-container .card-carousel .card-head{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .card-carousel .card-head img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-container .card-carousel .card-body{
+    border-top: 2px solid var(--primary-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+.card-container .card-carousel .card-body h5{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-container .card-carousel .card-body a{
+    color: var(--primary-color);
+    background-color: white;
+    font-size: 12px;
+}
+
+.card-container .card-carousel .card-body a:hover{
+    color: white;
+    background-color: var(--primary-color);
+    border: 1px solid white;
+}
+
+.carousel-slider .container .swiper-button-next{
+    background-color: var(--primary-color); 
+    color: white; 
+    border-radius: 100%; 
+    width: 70px; 
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .7);
+}
+
+.carousel-slider .container .swiper-button-prev{
+    background-color: var(--primary-color); 
+    color: white; 
+    border-radius: 100%; 
+    width: 70px; 
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .7);
+}
+
+.carousel-slider .container .swiper-pagination {
+    bottom: -10px;
+}
+
+/* ---------- End of Our Service ----------*/
+
+
+
+
+
+/* ---------- Lerning Center ----------*/
+.learning-center-container h5{
+    font-size: 13px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.learning-center-container .btn{
+    color: white;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.learning-center-container a{
+    font-size: 13px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.learning-center-container a:hover{
+    color: green;
+}
+
+.learning-center-container .btn:hover{
+    color: var(--primary-color);
+    background-color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.hint-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; /* Aligns with the text */
+}
+
+.hint-icon {
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer;
+    padding: 1px;
+    border: 2px solid #ff0000;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 16px; /* Adjusts text alignment within the circle */
+    vertical-align: middle; /* Aligns with the text */
+}
+
+.hint-text {
+    visibility: hidden;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px; 
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 220px; 
+    font-size: 10px; 
+}
+
+.hint-container:hover .hint-text,
+.hint-container:focus-within .hint-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ---------- End of Learning Center ----------*/
+
+
+
+
+
+/* ---------- Our Service Detail ----------*/
+.ourservice-detail{
+    padding-bottom: 50px;
+}
+
+.ourservice-detail .container h1{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.ourservice-detail .container p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+.ourservice-detail .container .container-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ourservice-detail .container-img{
+    border-radius: 10px;
+    width: auto;
+    height: 500px;
+}
+/* ---------- End of Our Service Detail ----------*/
+
+
+
+
+
+/* ---------- Contact Us ----------*/
+.contactus-container h1{
+    font-size: 35px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contactus-container p{
+    font-size: 12.5px;
+    text-align: justify;
+}
+.form-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    font-size: 12px; 
+    color: #999;
+}
+
+.contactus-container .btn-submit {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 12px;
+    width: 70px;
+    border: none;
+}
+/* ---------- End of Contact Us ----------*/
+
+
+
+
+
+/* ---------- Blog ----------*/
+.blog-container h1{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;  
+}
+
+.blog-container .blog-card-container .card{
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.blog-container .blog-card-container .card-head{
+    height: 230px;
+    overflow: hidden;
+}
+
+.blog-container .blog-card-container .card-body{
+    height: 150px;
+    border-top: 3px solid var(--secondary-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-container .blog-card-container .card-body h5{
+    color: var(--text-color);
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.blog-container .blog-card-container .card-body p{
+    font-size: 13px;
+    text-align: justify;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.blog-container .blog-card-container .card-body .btn{
+    color: white;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 12px;
+}
+
+.blog-container .blog-card-container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+/* ---------- End of Blog ----------*/
+
+
+
+
+
+/*---------- Deskripsi Blog ----------*/
+.deskripsiblog-container{
+    padding-bottom: 50px;
+}
+
+.deskripsiblog-container .deskripsiblog-img{
+    border-radius: 10px;
+}
+
+.deskripsiblog-container .deskripsiblog-img img{
+    border-radius: 7px;
+}
+
+.deskripsiblog-container .deskripsiblog-judul h1{
+    font-size: 35px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.deskripsiblog-container .deskripsiblog-tanggal p{
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.deskripsiblog-container .deskripsiblog-deskripsi p{
+    font-size: 13px;
+    color: var(--text-color);
+    text-align: justify;
+}
+/*---------- End Of Deskripsi Blog ----------*/
+
+
+
+
+/* ---------- Development ----------*/
+.development-container{
+    padding-bottom: 50px;
+}
+
+.development-container p{
+    font-size: 13px;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.development-container .blog-card-container .card{
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.development-container .blog-card-container .card-head{
+    overflow: hidden;
+}
+
+
+.development-container .blog-card-container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.development-container .blog-card-container .card-body{
+    border-top: 3px solid var(--secondary-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.development-container .blog-card-container .card-body p{
+    font-size: 13px;
+    text-align: justify;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.development-container .blog-card-container .card-body h5{
+    color: var(--text-color);
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.development-container .blog-card-container .card-body .btn{
+    color: white;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 12px;
+}
+
+.development-container .blog-card-container .card-body .btn:hover{
+    background-color: white;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+/* ---------- End of Development ----------*/
+
+
+
+
+
+/*----------- Deskripsi Development ----------*/
+.development-detail-container .development-detail-judul h1{
+    font-size: 35px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    padding-top: 25px;
+}
+
+.development-detail-container .development-detail-tanggal p{
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.development-detail-container .development-detail-deskripsi p{
+    font-size: 13px;
+    color: var(--text-color);
+    text-align: justify;
+}
+/*---------- End Of Deskripsi Development ----------*/
+
+
+
+
+
+/* ---------- Field Industrial Practice ----------*/
+.field-industrial-practice h1{
+    font-size: 35px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.field-industrial-practice .peraturan-img-container{
+    width: 70%;
+    height: 100%;
+}
+
+.field-industrial-practice .peraturan-img-container img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    align-items: center;
+}
+
+.field-industrial-practice .paragraf-peraturan-container p{
+    font-size: 13px;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.row.my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    box-shadow: 2px 2px 2px var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.table h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table p{
+    font-size: 13px;
+}
+
+.table thead.thead-dark th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+a.btn.btn-primary.btn-sm {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 0.2rem;
+    text-decoration: none;
+}
+
+a.btn.btn-primary.btn-sm i {
+    margin-right: 0.25rem;
+}
+
+a.btn.btn-primary.btn-sm:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: #004085;
+}
+/* ---------- End of Field Industrial Practice ----------*/
+
+
+
+
+
+/* ---------- Our Team ----------*/
+.planning-container h1{
+    font-size: 35px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.planning-container .container-img{
+    width: 100%;
+    height: 300px;
+}
+
+.planning-container .container-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.planning-container .container-tanggal p{
+    font-size: 13px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.planning-container .container-deskripsi p{
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: justify;
+}
+/* ---------- End of Our Team ----------*/
+
+
+
+
+
+/* ---------- Flooting Button ----------*/
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: white;
+    border: 2px solid var(--secondary-color); 
+}
+
+.container .floating-button{ 
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+    border-radius: 100%;
+    width: 70px; 
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .7);
+}
+
+.container .floating-button img{
+    width: 90%;
+}
+/* ---------- End of Flooting Button ----------*/
+
+
+
+
+
+/* ---------- Learning Center Content ----------*/
+.h1-learning-center h1{
+    font-size: 35px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.row.my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    box-shadow: 2px 2px 2px var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.table h1{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table p{
+    font-size: 11px;
+}
+
+.table thead.thead-dark th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+a.btn.btn-primary.btn-sm {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 0.2rem;
+    text-decoration: none;
+}
+
+a.btn.btn-primary.btn-sm i {
+    margin-right: 0.25rem;
+}
+
+a.btn.btn-primary.btn-sm:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: #004085;
+}
+/* ---------- End of Learning Center Content ----------*/
+
+
+
+
+
+/* ---------- Footer ---------- */
+.footer1 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0; 
+}
+
+.footer1 .container{
+    padding-bottom: 30px;
+}
+
+.footer1 .container h2{
+    font-weight: bolder;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.footer1 .container a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 .container a:hover{
+    color: var(--secondary-color);
+}
+
+.footer1 .container p{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 .container p:hover{
+    color: var(--secondary-color);
+}
+
+.footer2{
+    background-color: #ffffff;
+    color: var(--primary-color);
+    padding: 10px 0;
+}
+
+.footer2 .container iframe{
+    width: 100%;
+    height: 200px;
+}
+
+.footer2 .container p{
+    font-size: 15px;
+    font-weight: bold;
+}
+/* ---------- End of Footer ----------*/
